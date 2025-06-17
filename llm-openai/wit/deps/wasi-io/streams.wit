@@ -1,4 +1,4 @@
-package wasi:io@0.2.3;
+package wasi-io@0.2.3;
 
 /// WASI I/O is an I/O abstraction API which is currently focused on providing
 /// stream types.
@@ -35,7 +35,7 @@ interface streams {
     /// promptly available than requested, they return the number of bytes promptly
     /// available, which could even be zero. To wait for data to be available,
     /// use the `subscribe` function to obtain a `pollable` which can be polled
-    /// for using `wasi:io/poll`.
+    /// for using `wasi-io/poll`.
     @since(version = 0.2.0)
     resource input-stream {
         /// Perform a non-blocking read from the stream.
@@ -114,7 +114,7 @@ interface streams {
     /// always return promptly, after the number of bytes that can be written
     /// promptly, which could even be zero. To wait for the stream to be ready to
     /// accept data, the `subscribe` function to obtain a `pollable` which can be
-    /// polled for using `wasi:io/poll`.
+    /// polled for using `wasi-io/poll`.
     ///
     /// Dropping an `output-stream` while there's still an active write in
     /// progress may result in the data being lost. Before dropping the stream,

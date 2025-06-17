@@ -1,4 +1,4 @@
-package wasi:io@0.2.3;
+package wasi-io@0.2.3;
 
 @since(version = 0.2.0)
 interface error {
@@ -7,8 +7,8 @@ interface error {
     /// The only method provided by this resource is `to-debug-string`,
     /// which provides some human-readable information about the error.
     ///
-    /// In the `wasi:io` package, this resource is returned through the
-    /// `wasi:io/streams/stream-error` type.
+    /// In the `wasi-io` package, this resource is returned through the
+    /// `wasi-io/streams/stream-error` type.
     ///
     /// To provide more specific error information, other interfaces may
     /// offer functions to "downcast" this error into more specific types. For example,

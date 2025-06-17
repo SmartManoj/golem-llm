@@ -21,7 +21,7 @@ There are 8 published WASM files for each release:
 
 Every component **exports** the same `golem:llm` interface, [defined here](wit/golem-llm.wit).
 
-The `-portable` versions only depend on `wasi:io`, `wasi:http` and `wasi:logging`.
+The `-portable` versions only depend on `wasi-io`, `wasi:http` and `wasi:logging`.
 
 The default versions also depend on [Golem's host API](https://learn.golem.cloud/golem-host-functions) to implement
 advanced durability related features.
